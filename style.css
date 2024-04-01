@@ -24,16 +24,16 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--bg-color);
+  background-color:aqua;
 }
 
 /* ---------- BUTTON ------------ */
 .btn{
-  width: 15em;
-  height: 5em;
+  width: 30em; /* Increased width */
+  height: 12em; /* Increased height */
   background-color: #fff;
   border: none;
-  border-radius: 3em;
+  border-radius: 3.5em; /* Adjusted border radius proportionally */
   box-shadow: 0 0 1em rgba(0,0,0, .2);
   outline: none;
   cursor: pointer;
@@ -54,7 +54,7 @@ body{
 }
 
 .btn__text{
-  font-size: 1.5rem;
+  font-size: 3rem; /* Increased font size */
   font-weight: 600;
   color: var(--color);
   position: absolute;
@@ -71,7 +71,7 @@ body{
 
 
 .btn__icon{
-  font-size: 1.5rem;
+  font-size: 2rem; /* Increased font size */
   color: var(--color);
   position: absolute;
 }
