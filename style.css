@@ -1,0 +1,137 @@
+/* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------------ VARIABLES ------------ */
+:root{
+  /* FONT */
+  --font: 'Poppins', sans-serif;
+
+  /* COLORS */
+  --color: #2f2f2f;
+  --bg-color: #f7f7f7;
+}
+
+/* ------------ BASE ------------ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+/* ---------- BUTTON ------------ */
+.btn{
+  width: 15em;
+  height: 5em;
+  background-color: #fff;
+  border: none;
+  border-radius: 3em;
+  box-shadow: 0 0 1em rgba(0,0,0, .2);
+  outline: none;
+  cursor: pointer;
+
+  transition: transform .3s ease;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.btn:active{
+  transform: scale(.9);
+}
+
+.btn__text{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color);
+  position: absolute;
+}
+
+.btn__text--second{
+  opacity: 0;
+}
+
+
+.green-tick {
+    color: green;
+}
+
+
+.btn__icon{
+  font-size: 1.5rem;
+  color: var(--color);
+  position: absolute;
+}
+
+.btn__icon--cart{
+  left: -20%;
+}
+
+.btn__icon--box{
+  top: -50%;
+}
+
+/* --------- ANIMATION ----------- */
+.btn.active .btn__text--first{
+  animation: text1 .3s forwards;
+}
+
+.btn.active .btn__text--second{
+  animation: text2 3s forwards;
+}
+
+.btn.active .btn__icon--cart{
+  animation: cart 2.5s forwards;
+}
+
+.btn.active .btn__icon--box{
+  animation: box 1.5s forwards;
+}
+
+@keyframes text1 {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes text2 {
+  90%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cart {
+  30%, 60%{
+    left: 42%;
+  }
+  100%{
+    left: 110%;
+  }
+}
+
+@keyframes box {
+  80%{
+    color: var(--color);
+  }
+  90%, 100%{
+    top: 15%;
+    color: transparent;
+  }
+  
+}
