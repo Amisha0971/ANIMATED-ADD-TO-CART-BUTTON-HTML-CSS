@@ -24,7 +24,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color:aqua;
+  background-color:blueviolet;
 }
 
 /* ---------- BUTTON ------------ */
@@ -71,7 +71,7 @@ body{
 
 
 .btn__icon{
-  font-size: 2rem; /* Increased font size */
+  font-size: 3rem; /* Increased font size */
   color: var(--color);
   position: absolute;
 }
